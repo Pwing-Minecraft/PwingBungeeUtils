@@ -27,8 +27,8 @@ public class ListCommand extends Command {
                 + ChatColor.GRAY + "[ " + ChatColor.DARK_PURPLE + "Players Online"
                 + ChatColor.GRAY + " ]" + ChatColor.DARK_GRAY + "-----------------";
 
-        sender.sendMessage(new TextComponent("Players Online: " + plugin.getProxy().getPlayers().size()));
         sender.sendMessage(new TextComponent(header));
+        sender.sendMessage(new TextComponent("Players Online: " + plugin.getProxy().getPlayers().size()));
         for (ServerInfo server : ProxyServer.getInstance().getServers().values()) {
             StringBuilder builder = new StringBuilder();
             for (ProxiedPlayer player : server.getPlayers()) {
