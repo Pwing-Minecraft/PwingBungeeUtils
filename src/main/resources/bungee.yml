@@ -1,0 +1,4 @@
+name: ${project.name}
+main: net.pwing.bungee.PwingBungeeUtils
+version: ${project.version}
+authors: [Redned]
