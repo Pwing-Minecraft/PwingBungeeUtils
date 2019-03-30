@@ -24,7 +24,7 @@ public class ListCommand extends Command {
     @Override
     public void execute(CommandSender sender, String[] args) {
         String header = ChatColor.DARK_GRAY + "------------------"
-                + ChatColor.GRAY + "[ " + ChatColor.DARK_PURPLE + "Players Online"
+                + ChatColor.GRAY + "[ " + ChatColor.DARK_PURPLE + "" + ChatColor.BOLD + "Players Online"
                 + ChatColor.GRAY + " ]" + ChatColor.DARK_GRAY + "-----------------";
 
         sender.sendMessage(new TextComponent(header));
