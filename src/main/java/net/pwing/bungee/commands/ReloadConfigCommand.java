@@ -23,6 +23,7 @@ public class ReloadConfigCommand extends Command {
             return;
         }
 
+        plugin.getMessageMap().clear();
         plugin.loadConfig();
         sender.sendMessage(new TextComponent(ChatColor.GREEN + "Successfully reloaded the config file."));
     }
