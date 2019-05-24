@@ -52,5 +52,8 @@ public class ReplyCommand extends Command {
 
         player.sendMessage(new TextComponent(toFormat + ChatColor.WHITE + builder.toString()));
         target.sendMessage(new TextComponent(fromFormat + ChatColor.WHITE + builder.toString()));
+
+        plugin.getMessageMap().put(player.getUniqueId(), target.getUniqueId());
+        plugin.getMessageMap().put(target.getUniqueId(), player.getUniqueId());
     }
 }
