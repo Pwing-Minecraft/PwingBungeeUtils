@@ -30,12 +30,16 @@ public class StaffChatCommand extends Command {
             builder.append(args[i] + " ");
         }
 
+        String serverName = "PROXY";
+        if (sender instanceof ProxiedPlayer)
+            serverName = ((ProxiedPlayer) sender).getServer().getInfo().getName();
+
         for (String str : plugin.getStaff()) {
             ProxiedPlayer player = plugin.getProxy().getPlayer(str);
             if (player == null)
                 continue;
 
-            player.sendMessage(new TextComponent(ChatColor.AQUA + "[" + ChatColor.WHITE + MessageUtil.capitalize(player.getServer().getInfo().getName()) + " - " + ChatColor.RED + sender.getName() + ChatColor.AQUA + "] " + builder.toString()));
+            player.sendMessage(new TextComponent(ChatColor.AQUA + "[" + ChatColor.WHITE + MessageUtil.capitalize(serverName) + " - " + ChatColor.RED + sender.getName() + ChatColor.AQUA + "] " + builder.toString()));
         }
     }
 }
