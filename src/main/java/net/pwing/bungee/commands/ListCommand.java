@@ -30,6 +30,9 @@ public class ListCommand extends Command {
         sender.sendMessage(new TextComponent(header));
         sender.sendMessage(new TextComponent("Players Online: " + plugin.getProxy().getPlayers().size()));
         for (ServerInfo server : ProxyServer.getInstance().getServers().values()) {
+            if (server.isRestricted() && !sender.hasPermission("bungeecord.server." + server.getName()))
+                continue;
+
             StringBuilder builder = new StringBuilder();
             for (ProxiedPlayer player : server.getPlayers()) {
                 if (builder.length() > 0)
