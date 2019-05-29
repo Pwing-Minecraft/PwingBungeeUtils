@@ -13,7 +13,7 @@ public class StaffChatCommand extends Command {
     private PwingBungeeUtils plugin;
 
     public StaffChatCommand(PwingBungeeUtils plugin, String name, String... aliases) {
-        super(name, null, aliases);
+        super(name, "pbungeeutils.staff", aliases);
 
         this.plugin = plugin;
     }
