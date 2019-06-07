@@ -25,3 +25,15 @@ staff:
 - Silver_Aaron
 - Shadowright
 - Shaur
+motd:
+  top: "        &2&lPw&a&ling &8[&a1.13.2&8] &5Bosses &eDungeons &2Spells"
+  bottom: "                        &a&lTest MOTD"
+  news:
+  - "&7&m |&d&m    &5&m  &8&m             &5&m  &d&m    &7&m| "
+  - "Online: &e$onlineplayers&6/&e$maxplayers"
+  - "&d"
+  - "&a&lMOTD Line"
+  - ""
+  - "&bWebsite: &fpwing.net"
+  - "&bDiscord: &fdiscord.gg/VXuray7"
+  - "&7&m |&d&m    &5&m  &8&m             &5&m  &d&m    &7&m| "

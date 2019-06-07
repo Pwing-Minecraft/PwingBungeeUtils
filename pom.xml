@@ -5,7 +5,7 @@
     <artifactId>bungee-utils</artifactId>
     <name>PwingBungeeUtils</name>
     <packaging>jar</packaging>
-    <version>1.0.3</version>
+    <version>1.0.4</version>
     <url>https://github.com/Pwing-Minecraft/PwingBungeeUtils</url>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
