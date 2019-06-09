@@ -10,7 +10,6 @@ import net.pwing.bungee.commands.MessageCommand;
 import net.pwing.bungee.commands.ReloadConfigCommand;
 import net.pwing.bungee.commands.ReplyCommand;
 import net.pwing.bungee.commands.StaffChatCommand;
-import net.pwing.bungee.listeners.PingListener;
 import net.pwing.bungee.listeners.PlayerListener;
 
 import java.io.File;
@@ -42,7 +41,6 @@ public class PwingBungeeUtils extends Plugin {
         getProxy().getPluginManager().registerCommand(this, new ReloadConfigCommand(this, "reloadbungeeconfig"));
         getProxy().getPluginManager().registerCommand(this, new StaffChatCommand(this, "staffchat", "sc"));
 
-        getProxy().getPluginManager().registerListener(this, new PingListener(this));
         getProxy().getPluginManager().registerListener(this, new PlayerListener(this));
     }
 
